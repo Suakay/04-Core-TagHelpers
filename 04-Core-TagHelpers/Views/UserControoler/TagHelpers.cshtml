@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "TagHelpers";
+}
+
+<h1>TagHelpers</h1>
+@model User
+<div class="row justify-content-center" style="margin-top:50px;">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Tag Helper Sayfası</h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="TagHelpers" asp-controller="User" method="post">
+                    <div class="form-group">
+                        <label asp-for="UserName">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" asp-for="UserName" />
+
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
